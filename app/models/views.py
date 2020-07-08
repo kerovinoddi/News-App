@@ -27,11 +27,8 @@ def articles(id):
 
     #Getting views 
     articles = get_articles(id)
-    print(news)#####
-    title = 'Welcome to news review website'
+    title = f'NH | {id}'
+    print(news)##
+
     return render_template('index.html',title = title,new=news_highlights)
-
-
-
-
 

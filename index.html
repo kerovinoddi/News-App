@@ -1,24 +1,22 @@
+{% extends 'base.html'%}
+{% import 'marcos.html' as marco%}
 
+{% block content%}
+<div class="container">
+    <!-- Technology news slot -->
+    <h3>Top technology news</h3>
+    <hr>
+    {{ marco.displaySourceList(technology_source)}}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    {% if title %}
-    <title> {{ title }}</title>
-    {% else %}
-    <title> Welcome to the best Movie Review website </title>
-    {% endif %}
-</head>
-<body>
+    <!-- Bussines news slot -->
+    <h3>Top bussines news</h3>
+    <hr>
+    {{ macro.displaySourceList(sources)}}
 
-        <!-- Popular movie section  -->
-        <h3> News Highlights</h3>
-         <ul>
-            {% for news_heighlights in news %}
-                <li>{{ news_heighlights.title}}</li>
-            {% endfor %}
-        </ul>
-    
-</body>
-</html>
+    <!-- Entertainment news slot -->
+    <h3>Top entertainment news</h3>
+    {{macro.displaySourceList(entertainment_suorces)}}
+
+    <!-- Sports news -->
+    <h3>Top sports news</h3>
+    {{macro.displaySourceList(sports_sources)}}

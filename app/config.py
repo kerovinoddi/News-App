@@ -3,7 +3,7 @@ class Config:
     '''
     General configuration parent class
     '''
-     NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 
 
     pass

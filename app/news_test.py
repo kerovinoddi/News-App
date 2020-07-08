@@ -1,5 +1,5 @@
 import unittest
-from models import news
+from models import Sources,Articles
 News = news.News
 
 class NewsTest(unittest.TestCase):
@@ -11,7 +11,7 @@ class NewsTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_news = News()
+        self.new_source = Sources('CNN','CNN News','EWTN','TBN','KTN')
 #
 
 def test_test instance(self)

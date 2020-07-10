@@ -1,4 +1,4 @@
-from flask import render_trmplate,request,redirect
+from flask import render_trmplate,request,redirect,url_for
 from app import app
 from ..request import get_sources,get_articles
 from ..models import Sources
@@ -27,8 +27,7 @@ def articles(id):
 
     #Getting views 
     articles = get_articles(id)
-    title = f'NH | {id}'
-    print(news)##
+    title = f'News Highlight | {id}'
 
-    return render_template('index.html',title = title,new=news_highlights)
+    return render_template('articles.html',title = title,articles = articles)
 

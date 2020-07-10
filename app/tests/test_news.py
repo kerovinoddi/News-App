@@ -46,3 +46,4 @@ class ArticlesTest(unittest.TestCase):
         self.assertEquals(self.new_article.url,'techie.com')
         self.assertEquals(self.new_article.image,'techie.com/7643t94.jpg')
         self.assertEquals(self.new_article.date,'2018-04-11T07:57:16Z')
+        

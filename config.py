@@ -1,7 +1,5 @@
-   import os
+  import os
 
-   class Config:
-class Config:    
    class Config:
     NEWS_SOURCES_BASE_URL ='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
    	ARTICLES_BASE_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
@@ -11,7 +9,7 @@ class Config:
    		pass
     
     class ProdConfig(Config):
-    pass
+        pass
 
 
     class DevConfig(Config):
